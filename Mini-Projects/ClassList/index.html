@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+    <style>
+        .addclass{
+            color: red;
+            background-color: yellowgreen;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="css">CSS</button>
+    <button id="add">Add Class</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggle">Toggle Class</button>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt tempore neque aspernatur doloribus voluptatum quam porro repudiandae vel veritatis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nesciunt tempore neque aspernatur doloribus voluptatum quam porro repudiandae vel veritatis.
+    </p>
+</body>
+<script>
+let btn1 = document.querySelector('#css');
+let para = document.querySelector('#para');
+
+btn1.addEventListener('click',()=>{
+    para.style.color = 'red';
+})
+
+let btn2 = document.querySelector('#add');
+btn2.addEventListener('click',()=>{
+    para.classList.add('addclass');
+})
+
+let btn3 = document.querySelector('#remove');
+btn3.addEventListener('click',()=>{
+    para.classList.remove('addclass');
+})
+let btn4 = document.querySelector('#toggle');
+btn4.addEventListener('click',()=>{
+    para.classList.toggle('addclass');
+})
+</script>
+</html>
