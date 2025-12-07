@@ -21,7 +21,6 @@ const deleteTask = (btn) => {
 }
 
 const deleteChecked = () => {
-    let Input = document.getElementById('input');
     let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
     checkboxes.forEach(checkbox => {
